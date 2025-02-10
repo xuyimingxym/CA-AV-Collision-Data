@@ -14,7 +14,11 @@ def pdf2df(doc):
     if df.shape[0] not in [266,268]:
           print('Failed...')
           return
-    info_index = [0, 2] + list(range(9,31)) + list(range(40,75)) + list(range(77,89)) + list(range(144,147)) + list(range(148,262))
+    if df.shape[0] == 266:
+          info_index = [0, 2] + list(range(9,31)) + list(range(40,75)) + list(range(77,89)) + list(range(144,147)) + list(range(148,262))
+    elif df.shape[0] == 268:
+          info_index = [0, 2] + list(range(9,31)) + list(range(40,88)) + list(range(143,146)) + list(range(148,262))
+          info_index.remove(45)
     output = df.iloc[info_index,:].T.replace([' ','Off'], ['Yes',''])
     output.loc[0, 'Address_2.1.0.1'] = output['Address_2.1.0.1'][0].replace("\r", " ")
     output.rename(columns={"Am":"AM","Pm":"PM",
