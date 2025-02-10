@@ -34,7 +34,7 @@ def pdf2df(doc):
                inplace=True)
     return output
 
-folder = "./AV Collision Reports/2019"
+folder = "./"
 res = pd.DataFrame()
 for file in os.listdir(folder):
     if file[-4:] == '.pdf':
