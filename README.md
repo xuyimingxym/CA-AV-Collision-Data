@@ -1,5 +1,5 @@
 # CA_AV_Collision_Data
-- Required library:
+Required library:
 - pymupdf
 - pandas
 - numpy
