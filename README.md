@@ -50,5 +50,8 @@ python pdf2py.py
 ```
 The results will be saved as 'Results.csv' in the YOUR_REPORT_FOLDER directory.
 
+## Citation
+Xu, Y., Jiao, J. and Chen, Y. (2025) “An Augmented Dataset of Autonomous Vehicle Collisions in California”. Zenodo. doi: 10.5281/zenodo.15937591.
+
 ## Contact
 If you have any questions, please contact Yiming Xu (yiming.xu@utexas.edu).
